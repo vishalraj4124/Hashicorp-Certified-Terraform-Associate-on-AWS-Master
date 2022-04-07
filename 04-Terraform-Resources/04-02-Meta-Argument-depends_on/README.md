@@ -154,7 +154,7 @@ resource "aws_instance" "my-ec2-vm" {
     sudo yum install httpd -y
     sudo systemctl enable httpd
     sudo systemctl start httpd
-    echo "<h1>Welcome to StackSimplify ! AWS Infra created using Terraform in us-east-1 Region</h1>" > /var/www/html/index.html
+    echo "<h1>Welcome to Bharath Waj Session ! AWS Infra created using Terraform in us-east-1 Region</h1>" > /var/www/html/index.html
     EOF  
   vpc_security_group_ids = [ aws_security_group.dev-vpc-sg.id ]
 }
